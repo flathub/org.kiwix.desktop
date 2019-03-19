@@ -56,12 +56,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "13f08a0b649c7afa804fa0e85678d693fd6069dd394c9b9e7d41973d74a3b5d3",
-                    "url": "http://download.kiwix.org/dev/xapian-core-1.4.7.tar.xz"
+                    "sha256": "68669327e08544ac88fe3473745dbcae4e8e98d5060b436c4d566f1f78709bb8",
+                    "url": "http://download.kiwix.org/dev/xapian-core-1.4.10.tar.xz"
                 },
                 {
                     "type": "patch",
                     "path": "patches/xapian_sys_types.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "patches/xapian_fix_include_errno.patch"
                 }
             ]
         },
@@ -72,8 +76,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/openzim/libzim.git",
-                    "tag": "4.0.4",
-                    "commit": "684c355a6c56208c3d9e0be7990c4923b7ed8c50"
+                    "tag": "4.0.6",
+                    "commit": "a01cb1053d9e44faa29fdda802db4598aff9b307"
                 }
             ]
         },
@@ -102,8 +106,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-lib.git",
-                    "tag": "4.0.0",
-                    "commit": "ab94ac0ee84631a0af11d4a33f50eecc8c3e329c"
+                    "tag": "4.1.0"
                 }
             ]
         },
@@ -133,8 +136,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-desktop.git",
-                    "tag": "2.0-beta3",
-                    "commit": "a6bcef230a0bfca3107be461cdc0de0b78adb38f"
+                    "tag": "2.0-beta4",
+                    "commit": "c03b195325cb1e447262ed2844a2bff55f8d9288"
                 }
             ]
         }
