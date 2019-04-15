@@ -76,8 +76,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/openzim/libzim.git",
-                    "tag": "4.0.6",
-                    "commit": "a01cb1053d9e44faa29fdda802db4598aff9b307"
+                    "tag": "4.0.7",
+                    "commit": "7a34c31d93521de1f5c60e444d56ddb8a905345c"
                 }
             ]
         },
@@ -106,7 +106,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-lib.git",
-                    "tag": "4.1.0"
+                    "tag": "4.1.0",
+                    "commit": "42b7692f9bcfa69fd433c51c4a29143a9dbaec8b"
                 }
             ]
         },
