@@ -50,6 +50,7 @@
             "config-opts": [
                 "--disable-sse",
                 "--disable-backend-chert",
+                "--disable-backend-remote",
                 "--disable-backend-inmemory",
                 "--disable-documentation"
             ],
@@ -76,8 +77,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/openzim/libzim.git",
-                    "tag": "4.0.7",
-                    "commit": "7a34c31d93521de1f5c60e444d56ddb8a905345c"
+                    "tag": "5.0.0"
                 }
             ]
         },
@@ -106,8 +106,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-lib.git",
-                    "tag": "4.1.0",
-                    "commit": "42b7692f9bcfa69fd433c51c4a29143a9dbaec8b"
+                    "tag": "5.1.0"
                 }
             ]
         },
@@ -137,8 +136,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-desktop.git",
-                    "tag": "2.0-beta4",
-                    "commit": "c03b195325cb1e447262ed2844a2bff55f8d9288"
+                    "tag": "2.0-beta5"
                 }
             ]
         }
