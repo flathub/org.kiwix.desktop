@@ -21,6 +21,9 @@
         "/bin/curl",
         "/bin/copydatabase",
         "/bin/kiwix-compile-resources",
+        "/bin/kiwix-manage",
+        "/bin/kiwix-read",
+        "/bin/kiwix-search",
         "/bin/quest",
         "/bin/simple*",
         "/bin/xapian-*",
@@ -77,7 +80,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/openzim/libzim.git",
-                    "tag": "5.0.0"
+                    "tag": "5.0.1",
+                    "commit": "d7d175d99ff92a96bd343c8beb2a84c373f81233"
                 }
             ]
         },
@@ -106,7 +110,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-lib.git",
-                    "tag": "5.1.0"
+                    "tag": "5.1.0",
+                    "commit": "3721d7439d647de6eead1794484fd9a787224ff6"
                 }
             ]
         },
@@ -126,6 +131,33 @@
                 {
                     "type": "patch",
                     "path": "patches/libaria2_android.patch"
+                }
+            ]
+        },
+        {
+            "name": "libmicrohttpd",
+            "config-opts": [
+                "--disable-https",
+                "--without-libgcrypt",
+                "--without-libcurl"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "sha256": "f2467959c5dd5f7fdf8da8d260286e7be914d18c99b898e22a70dafd2237b3c9",
+                    "url": "http://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-0.9.65.tar.gz"
+                }
+            ]
+        },
+        {
+            "name": "kiwix-tools",
+            "buildsystem": "meson",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/kiwix/kiwix-tools.git",
+                    "tag": "2.0.0",
+                    "commit": "a365c1e7207017937192c22ebb363862df03f08c"
                 }
             ]
         },
