@@ -76,6 +76,9 @@
         {
             "name": "libzim",
             "buildsystem": "meson",
+            "config-opts": [
+                "--wrap-mode=nodownload"
+            ],
             "sources": [
                 {
                     "type": "git",
@@ -110,8 +113,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-lib.git",
-                    "tag": "5.1.0",
-                    "commit": "3721d7439d647de6eead1794484fd9a787224ff6"
+                    "tag": "5.2.0",
+                    "commit": "d55976271febe62f93528fbfdcd541e219925972"
                 }
             ]
         },
@@ -156,8 +159,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-tools.git",
-                    "tag": "2.0.0",
-                    "commit": "a365c1e7207017937192c22ebb363862df03f08c"
+                    "tag": "2.1.0",
+                    "commit": "d82f9e7d5eab340ff0d5f1a4c1c52a112c73390c"
                 }
             ]
         },
@@ -168,7 +171,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-desktop.git",
-                    "tag": "2.0-beta5"
+                    "tag": "2.0-beta5",
+                    "commit": "d809533ee845aca38344906823cfb2d0a11bdfd0"
                 }
             ]
         }
