@@ -89,6 +89,23 @@
             ]
         },
         {
+            "name": "libmicrohttpd",
+            "config-opts": [
+                "--disable-https",
+                "--without-libgcrypt",
+                "--without-libcurl",
+                "--disable-doc",
+                "--disable-examples"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "sha256": "06dbd2654f390fa1e8196fe063fc1449a6c2ed65a38199a49bf29ad8a93b8979",
+                    "url": "http://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-0.9.46.tar.gz"
+                }
+            ]
+        },
+        {
             "name": "mustache",
             "buildsystem": "simple",
             "build-commands": [
@@ -113,8 +130,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-lib.git",
-                    "tag": "5.2.0",
-                    "commit": "d55976271febe62f93528fbfdcd541e219925972"
+                    "tag": "5.2.0"
                 }
             ]
         },
@@ -134,21 +150,6 @@
                 {
                     "type": "patch",
                     "path": "patches/libaria2_android.patch"
-                }
-            ]
-        },
-        {
-            "name": "libmicrohttpd",
-            "config-opts": [
-                "--disable-https",
-                "--without-libgcrypt",
-                "--without-libcurl"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "sha256": "f2467959c5dd5f7fdf8da8d260286e7be914d18c99b898e22a70dafd2237b3c9",
-                    "url": "http://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-0.9.65.tar.gz"
                 }
             ]
         },
