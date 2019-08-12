@@ -130,7 +130,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-lib.git",
-                    "tag": "5.2.0"
+                    "tag": "5.2.0",
+                    "commit": "d55976271febe62f93528fbfdcd541e219925972"
                 }
             ]
         },
