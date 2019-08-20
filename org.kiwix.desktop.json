@@ -83,8 +83,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/openzim/libzim.git",
-                    "tag": "5.0.1",
-                    "commit": "d7d175d99ff92a96bd343c8beb2a84c373f81233"
+                    "tag": "5.0.2",
+                    "commit": "4c6f861f97dbf194e48b04609ccd4026bb978a96"
                 }
             ]
         },
@@ -100,8 +100,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "06dbd2654f390fa1e8196fe063fc1449a6c2ed65a38199a49bf29ad8a93b8979",
-                    "url": "http://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-0.9.46.tar.gz"
+                    "sha256": "f2467959c5dd5f7fdf8da8d260286e7be914d18c99b898e22a70dafd2237b3c9",
+                    "url": "http://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-0.9.65.tar.gz"
                 }
             ]
         },
@@ -126,12 +126,15 @@
         {
             "name": "kiwix-lib",
             "buildsystem": "meson",
+            "config-opts": [
+                "--wrap-mode=nodownload"
+            ],
             "sources": [
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-lib.git",
-                    "tag": "5.2.0",
-                    "commit": "d55976271febe62f93528fbfdcd541e219925972"
+                    "tag": "6.0.0",
+                    "commit": "e25b27b354fe99a198c45370c5d2642ccb614873"
                 }
             ]
         },
@@ -161,7 +164,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-tools.git",
-                    "tag": "2.1.0"
+                    "tag": "3.0.0",
+                    "commit": "63ec03a3d4fb1be1b10da774b9844e6224ecfc74"
                 }
             ]
         },
