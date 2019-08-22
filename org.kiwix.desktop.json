@@ -163,8 +163,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-tools.git",
-                    "tag": "3.0.0",
-                    "commit": "63ec03a3d4fb1be1b10da774b9844e6224ecfc74"
+                    "tag": "3.0.1",
+                    "commit": "98c810eb2ad7a9aa471fc47e64dab9584268fb6e"
                 }
             ]
         },
