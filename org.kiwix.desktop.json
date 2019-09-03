@@ -83,7 +83,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/openzim/libzim.git",
-                    "tag": "5.1.0"
+                    "tag": "6.0.0",
+                    "commit": "bfc58b568d1d1c6c74abe4b56065da4be5acecdb"
                 }
             ]
         },
