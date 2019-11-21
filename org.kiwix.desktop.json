@@ -1,7 +1,7 @@
 {
     "app-id": "org.kiwix.desktop",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.12",
+    "runtime-version": "5.13",
     "sdk": "org.kde.Sdk",
     "command": "kiwix-desktop",
     "rename-icon": "kiwix-desktop",
@@ -100,8 +100,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "4e66d4db1574f4912fbd2690d10d227cc9cc56df6a10aa8f4fc2da75cea7ab1b",
-                    "url": "http://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-0.9.66.tar.gz"
+                    "sha256": "c5716e2a2899abc9e16c8fa7a1a58da88f81aca96a0b7e68a5d4d89e21610b61",
+                    "url": "http://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-0.9.68.tar.gz"
                 }
             ]
         },
@@ -114,8 +114,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "0d17298a81c08f12ebc446cdee387268a395d34bb724050fe67d5ce8c4e98b7a",
-                    "url": "https://github.com/kainjow/Mustache/archive/v3.2.1.tar.gz"
+                    "sha256": "17129681ee207404409d71bdc649f08d47029e3dea0ef68e5cd47868de1be23c",
+                    "url": "https://github.com/kainjow/Mustache/archive/v4.0.tar.gz"
                 },
                 {
                     "type": "patch",
@@ -148,8 +148,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "3a44a802631606e138a9e172a3e9f5bcbaac43ce2895c1d8e2b46f30487e77a3",
-                    "url": "https://github.com/aria2/aria2/releases/download/release-1.34.0/aria2-1.34.0.tar.xz"
+                    "sha256": "1e2b7fd08d6af228856e51c07173cfcf987528f1ac97e04c5af4a47642617dfd",
+                    "url": "https://github.com/aria2/aria2/releases/download/release-1.35.0/aria2-1.35.0.tar.xz"
                 },
                 {
                     "type": "patch",
@@ -176,7 +176,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-desktop.git",
-                    "tag": "2.0-rc3"
+                    "tag": "2.0-rc3",
+		    "commit": "b67577ac9a422f0602366f52e40ff2520d5bf85c"
                 }
             ]
         }
