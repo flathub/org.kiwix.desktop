@@ -1,7 +1,7 @@
 {
     "app-id": "org.kiwix.desktop",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.13",
+    "runtime-version": "5.12",
     "sdk": "org.kde.Sdk",
     "command": "kiwix-desktop",
     "rename-icon": "kiwix-desktop",
