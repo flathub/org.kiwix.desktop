@@ -116,10 +116,6 @@
                     "type": "archive",
                     "sha256": "17129681ee207404409d71bdc649f08d47029e3dea0ef68e5cd47868de1be23c",
                     "url": "https://github.com/kainjow/Mustache/archive/v4.0.tar.gz"
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/mustache_virtual_destructor.patch"
                 }
             ]
         },
