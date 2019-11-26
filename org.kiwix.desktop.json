@@ -176,7 +176,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-desktop.git",
-                    "tag": "2.0-rc3"
+                    "tag": "2.0-rc3",
+                    "commit": "b67577ac9a422f0602366f52e40ff2520d5bf85c"
                 }
             ]
         }
