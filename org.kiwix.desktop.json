@@ -133,8 +133,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-lib.git",
-                    "tag": "8.2.1",
-                    "commit": "ea3349f37c36c14b77316d80f2c29b5a2d61cffb"
+                    "tag": "8.2.1"
                 }
             ]
         },
@@ -176,7 +175,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-desktop.git",
-                    "tag": "2.0-rc4"
+                    "tag": "2.0-rc4",
+                    "commit": "9e3385ecf548c7999f7d0508888143ad4dc69fd9"
                 }
             ]
         }
