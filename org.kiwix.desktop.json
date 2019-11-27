@@ -134,7 +134,7 @@
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-lib.git",
                     "tag": "8.2.1",
-                    "commit": "ea3349f37c36c14b77316d80f2c29b5a2d61cffb"
+                    "commit": "abd2fa3bf33f131f782f4750b4be11b9ede7783a"
                 }
             ]
         },
