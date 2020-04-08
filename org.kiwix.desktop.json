@@ -60,8 +60,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "68669327e08544ac88fe3473745dbcae4e8e98d5060b436c4d566f1f78709bb8",
-                    "url": "http://download.kiwix.org/dev/xapian-core-1.4.10.tar.xz"
+                    "sha256": "975a7ac018c9d34a15cc94a3ecc883204403469f748907e5c4c64d0aec2e4949",
+                    "url": "http://download.kiwix.org/dev/xapian-core-1.4.14.tar.xz"
                 },
                 {
                     "type": "patch",
@@ -70,6 +70,10 @@
                 {
                     "type": "patch",
                     "path": "patches/xapian_fix_include_errno.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "patches/xapian_remote.patch"
                 }
             ]
         },
@@ -83,8 +87,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/openzim/libzim.git",
-                    "tag": "6.0.2",
-                    "commit": "ce63cb59badab914f6044bb5d76796fbb99a3f53"
+                    "tag": "6.1.0",
+                    "commit": "42866c8e6c016e271f277312a359d07236c4588b"
                 }
             ]
         },
@@ -100,8 +104,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "4e66d4db1574f4912fbd2690d10d227cc9cc56df6a10aa8f4fc2da75cea7ab1b",
-                    "url": "http://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-0.9.66.tar.gz"
+                    "sha256": "37c36f1be177f0e37ef181a645cd3baac1000bd322a01c2eff70f3cc8c91749c",
+                    "url": "https://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-0.9.63.tar.gz"
                 }
             ]
         },
@@ -133,8 +137,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-lib.git",
-                    "tag": "8.2.2",
-                    "commit": "8095a87bf1f8ebab7645618c6a404de332f21978"
+                    "tag": "9.1.0",
+                    "commit": "2bf6b0472665ad31117d5620c49abf786715d0e8"
                 }
             ]
         },
@@ -164,8 +168,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-tools.git",
-                    "tag": "3.0.1",
-                    "commit": "98c810eb2ad7a9aa471fc47e64dab9584268fb6e"
+                    "tag": "3.1.0",
+                    "commit": "07ca82a51683143168abeed495ea0281191c8430"
                 }
             ]
         },
@@ -176,8 +180,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-desktop.git",
-                    "tag": "2.0-rc4",
-                    "commit": "9e3385ecf548c7999f7d0508888143ad4dc69fd9"
+                    "tag": "2.0",
+                    "commit": "7cec6cbef0601854921f658d08405153108510db"
                 }
             ]
         }
