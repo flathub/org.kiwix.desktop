@@ -49,6 +49,26 @@
             ]
         },
         {
+            "name": "zstd",
+            "buildsystem": "meson",
+            "subdir": "build/meson",
+            "config-opts": [
+                "-Dbin_programs=false",
+                "-Dbin_contrib=false"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "sha256": "59ef70ebb757ffe74a7b3fe9c305e2ba3350021a918d168a046c6300aeea9315",
+                    "url": "https://github.com/facebook/zstd/releases/download/v1.4.4/zstd-1.4.4.tar.gz"
+                },
+                {
+                    "type": "patch",
+                    "path": "patches/zstd_meson.patch"
+                }
+            ]
+        },
+        {
             "name": "xapian-core",
             "config-opts": [
                 "--disable-sse",
@@ -137,8 +157,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-lib.git",
-                    "tag": "9.1.1",
-                    "commit": "8fc42558d313d9585ff42d1ecb508420515e4f1f"
+                    "tag": "9.1.2",
+                    "commit": "9f613014238321cea7d6904c977a01665866429b"
                 }
             ]
         },
