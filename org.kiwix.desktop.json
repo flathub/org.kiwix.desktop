@@ -87,8 +87,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/openzim/libzim.git",
-                    "tag": "6.1.0",
-                    "commit": "42866c8e6c016e271f277312a359d07236c4588b"
+                    "tag": "6.1.1",
+                    "commit": "ec13dd11ac4246fba2188896434d0bc25ae38a00"
                 }
             ]
         },
@@ -137,8 +137,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-lib.git",
-                    "tag": "9.1.0",
-                    "commit": "2bf6b0472665ad31117d5620c49abf786715d0e8"
+                    "tag": "9.1.1",
+                    "commit": "8fc42558d313d9585ff42d1ecb508420515e4f1f"
                 }
             ]
         },
@@ -180,8 +180,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-desktop.git",
-                    "tag": "2.0",
-                    "commit": "7cec6cbef0601854921f658d08405153108510db"
+                    "tag": "2.0.1",
+                    "commit": "fc9e9a1b519761d348453d35e93de886e92e0039"
                 }
             ]
         }
