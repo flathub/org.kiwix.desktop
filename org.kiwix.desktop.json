@@ -153,8 +153,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-lib.git",
-                    "tag": "9.2.2",
-                    "commit": "081a2b2fa6d6074b53ce0aa087dab50b3ded71ba"
+                    "tag": "9.3.0",
+                    "commit": "f997fdb232adaf5622d8dab3ee21e07bf60f72cc"
                 }
             ]
         },
@@ -184,8 +184,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-tools.git",
-                    "tag": "3.1.1",
-                    "commit": "4120e7fd2598e336e753e34ac457b772266a9b90"
+                    "tag": "3.1.2",
+                    "commit": "fdec897bc76e43bad6f27166fb0e3fe49170d4d3"
                 }
             ]
         },
@@ -196,8 +196,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-desktop.git",
-                    "tag": "2.0.2",
-                    "commit": "897cd3a49e362c5ec67bf1bdd9f818f79e7fb015"
+                    "tag": "2.0.3",
+                    "commit": "0e08e18b3e81cf6fc82652a68ff6568b77bd4715"
                 }
             ]
         }
