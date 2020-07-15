@@ -107,8 +107,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/openzim/libzim.git",
-                    "tag": "6.1.7",
-                    "commit": "189176e2ce1b503eca52dfba2ff55687e4cf99f6"
+                    "tag": "6.1.8",
+                    "commit": "5996f7962758da8afc4c28d31abb7624b79e822e"
                 }
             ]
         },
@@ -124,8 +124,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "37c36f1be177f0e37ef181a645cd3baac1000bd322a01c2eff70f3cc8c91749c",
-                    "url": "https://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-0.9.63.tar.gz"
+                    "sha256": "e8f445e85faf727b89e9f9590daea4473ae00ead38b237cf1eda55172b89b182",
+                    "url": "https://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-0.9.71.tar.gz"
                 }
             ]
         },
@@ -153,8 +153,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-lib.git",
-                    "tag": "9.3.0",
-                    "commit": "f997fdb232adaf5622d8dab3ee21e07bf60f72cc"
+                    "tag": "9.3.1",
+                    "commit": "3bf70f431564080cd0185c2ebcddebc1d3056b00"
                 }
             ]
         },
@@ -196,8 +196,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-desktop.git",
-                    "tag": "2.0.3",
-                    "commit": "0e08e18b3e81cf6fc82652a68ff6568b77bd4715"
+                    "tag": "2.0.4",
+                    "commit": "d4028e95e86e8c53e34b070b5bfe25a5055c2695"
                 }
             ]
         }
