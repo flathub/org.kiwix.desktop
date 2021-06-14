@@ -1,7 +1,9 @@
 {
     "app-id": "org.kiwix.desktop",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.12",
+    "runtime-version": "5.15",
+    "base": "io.qt.qtwebengine.BaseApp",
+    "base-version": "5.15",
     "sdk": "org.kde.Sdk",
     "command": "kiwix-desktop",
     "rename-icon": "kiwix-desktop",
@@ -180,6 +182,16 @@
         {
             "name": "kiwix-desktop",
             "buildsystem": "qmake",
+            "build-options": {
+                "env": [
+                    "QMAKEPATH=/app/lib"
+                ]
+            },
+            "config-opts": [
+                "QMAKE_INCDIR+=/app/include/QtWebEngine",
+                "QMAKE_INCDIR+=/app/include/QtWebEngineCore",
+                "QMAKE_INCDIR+=/app/include/QtWebEngineWidgets"
+            ],
             "sources": [
                 {
                     "type": "git",
