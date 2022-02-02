@@ -41,7 +41,7 @@
                 {
                     "type": "archive",
                     "sha256": "0f422dad86da0a2e56a37fb2a88376aae6e931f22cc8b956978460c9db06136b",
-                    "url": "http://download.kiwix.org/dev/pugixml-1.2.tar.gz",
+                    "url": "http://mirror.download.kiwix.org/dev/pugixml-1.2.tar.gz",
                     "dest": "src"
                 },
                 {
@@ -61,12 +61,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "59ef70ebb757ffe74a7b3fe9c305e2ba3350021a918d168a046c6300aeea9315",
-                    "url": "https://github.com/facebook/zstd/releases/download/v1.4.4/zstd-1.4.4.tar.gz"
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/zstd_meson.patch"
+                    "sha256": "e28b2f2ed5710ea0d3a1ecac3f6a947a016b972b9dd30242369010e5f53d7002",
+                    "url": "https://github.com/facebook/zstd/releases/download/v1.5.1/zstd-1.5.1.tar.gz"
                 }
             ]
         },
@@ -76,26 +72,13 @@
                 "--disable-sse",
                 "--disable-backend-chert",
                 "--disable-backend-remote",
-                "--disable-backend-inmemory",
                 "--disable-documentation"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "975a7ac018c9d34a15cc94a3ecc883204403469f748907e5c4c64d0aec2e4949",
-                    "url": "http://download.kiwix.org/dev/xapian-core-1.4.14.tar.xz"
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/xapian_sys_types.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/xapian_fix_include_errno.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/xapian_remote.patch"
+                    "sha256": "196ddbb4ad10450100f0991a599e4ed944cbad92e4a6fe813be6dce160244b77",
+                    "url": "http://mirror.download.kiwix.org/dev/xapian-core-1.4.18.tar.xz"
                 }
             ]
         },
@@ -103,14 +86,15 @@
             "name": "libzim",
             "buildsystem": "meson",
             "config-opts": [
-                "--wrap-mode=nodownload"
+                "--wrap-mode=nodownload",
+                "-Dtest_data_dir=none"
             ],
             "sources": [
                 {
                     "type": "git",
                     "url": "https://github.com/openzim/libzim.git",
-                    "tag": "6.3.0",
-                    "commit": "a5c4bc380cb791bd51e0785527607d106615313b"
+                    "tag": "7.2.0",
+                    "commit": "3e7831426efb86d541b3962d20dfa92af57f2650"
                 }
             ]
         },
@@ -126,8 +110,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "e8f445e85faf727b89e9f9590daea4473ae00ead38b237cf1eda55172b89b182",
-                    "url": "https://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-0.9.71.tar.gz"
+                    "sha256": "0ae825f8e0d7f41201fd44a0df1cf454c1cb0bc50fe9d59c26552260264c2ff8",
+                    "url": "https://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-0.9.72.tar.gz"
                 }
             ]
         },
@@ -146,7 +130,7 @@
             ]
         },
         {
-            "name": "kiwix-lib",
+            "name": "libkiwix",
             "buildsystem": "meson",
             "config-opts": [
                 "--wrap-mode=nodownload"
@@ -154,9 +138,9 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://github.com/kiwix/kiwix-lib.git",
-                    "tag": "9.4.1",
-                    "commit": "fbd4332c870b541d459a9f1110b653e469402f9a"
+                    "url": "https://github.com/kiwix/libkiwix.git",
+                    "tag": "10.0.1",
+                    "commit": "ce24b1fa5f4ab2d128329b233d50c474cee1d3c0"
                 }
             ]
         },
@@ -170,12 +154,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "3a44a802631606e138a9e172a3e9f5bcbaac43ce2895c1d8e2b46f30487e77a3",
-                    "url": "https://github.com/aria2/aria2/releases/download/release-1.34.0/aria2-1.34.0.tar.xz"
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/libaria2_android.patch"
+                    "sha256": "58d1e7608c12404f0229a3d9a4953d0d00c18040504498b483305bcb3de907a5",
+                    "url": "https://github.com/aria2/aria2/releases/download/release-1.36.0/aria2-1.36.0.tar.xz"
                 }
             ]
         },
@@ -196,8 +176,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-desktop.git",
-                    "tag": "2.0.5",
-                    "commit": "bd54ad9d79689dbd1933d348fff4cfdac1818470"
+                    "tag": "2.1.0",
+                    "commit": "2a612422e7e6aeecb31e0710d44647c9cb618d0d"
                 }
             ]
         }
