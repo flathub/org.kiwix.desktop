@@ -61,8 +61,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "e28b2f2ed5710ea0d3a1ecac3f6a947a016b972b9dd30242369010e5f53d7002",
-                    "url": "https://github.com/facebook/zstd/releases/download/v1.5.1/zstd-1.5.1.tar.gz"
+                    "sha256": "f7de13462f7a82c29ab865820149e778cbfe01087b3a55b5332707abf9db4a6e",
+                    "url": "https://github.com/facebook/zstd/archive/refs/tags/v1.5.2.tar.gz"
                 }
             ]
         },
@@ -139,8 +139,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/libkiwix.git",
-                    "tag": "10.1.0",
-                    "commit": "941c3b5df3f99f1160800f5a415e516b0f7639ce"
+                    "tag": "10.1.1",
+                    "commit": "e22e073d43be5b417bda775c0a31215bb6498c8a"
                 }
             ]
         },
