@@ -1,9 +1,9 @@
 {
     "app-id": "org.kiwix.desktop",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15",
+    "runtime-version": "5.15-21.08",
     "base": "io.qt.qtwebengine.BaseApp",
-    "base-version": "5.15",
+    "base-version": "5.15-21.08",
     "sdk": "org.kde.Sdk",
     "command": "kiwix-desktop",
     "rename-icon": "kiwix-desktop",
@@ -41,7 +41,7 @@
                 {
                     "type": "archive",
                     "sha256": "0f422dad86da0a2e56a37fb2a88376aae6e931f22cc8b956978460c9db06136b",
-                    "url": "http://mirror.download.kiwix.org/dev/pugixml-1.2.tar.gz",
+                    "url": "http://mirror.download.kiwix.org/dev/kiwix-build/pugixml-1.2.tar.gz",
                     "dest": "src"
                 },
                 {
@@ -78,7 +78,7 @@
                 {
                     "type": "archive",
                     "sha256": "196ddbb4ad10450100f0991a599e4ed944cbad92e4a6fe813be6dce160244b77",
-                    "url": "http://mirror.download.kiwix.org/dev/xapian-core-1.4.18.tar.xz"
+                    "url": "http://mirror.download.kiwix.org/dev/kiwix-build/xapian-core-1.4.18.tar.xz"
                 }
             ]
         },
@@ -139,8 +139,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/libkiwix.git",
-                    "tag": "10.1.1",
-                    "commit": "e22e073d43be5b417bda775c0a31215bb6498c8a"
+                    "tag": "11.0.0",
+                    "commit": "6938253e592bab081af9b8075397df1c8295366b"
                 }
             ]
         },
@@ -176,8 +176,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-desktop.git",
-                    "tag": "2.2.1",
-                    "commit": "fe52c11329c84c64ec68fc76a4345db3b3632e94"
+                    "tag": "2.2.2",
+                    "commit": "f20d9aa70bafeecd6d6777c97b3adfa804ef84cb"
                 }
             ]
         }
