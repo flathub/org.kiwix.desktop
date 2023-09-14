@@ -77,8 +77,12 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "196ddbb4ad10450100f0991a599e4ed944cbad92e4a6fe813be6dce160244b77",
-                    "url": "http://mirror.download.kiwix.org/dev/kiwix-build/xapian-core-1.4.18.tar.xz"
+                    "sha256": "05884af00b06702ce486057d62a3bfbe6606cf965ada0f5ea570b328a2fa1ea8",
+                    "url": "http://mirror.download.kiwix.org/dev/kiwix-build/xapian-core-1.4.22.tar.xz"
+                },
+                {
+                    "type": "patch",
+                    "path": "patches/xapian_win32.patch"
                 }
             ]
         },
@@ -93,8 +97,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/openzim/libzim.git",
-                    "tag": "8.1.0",
-                    "commit": "9bc584edd178492f2bc8dc2a43889319980e6564"
+                    "tag": "8.2.1",
+                    "commit": "ef2378c9aa875eeae96c2e4d220e4ba433296d51"
                 }
             ]
         },
@@ -110,8 +114,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "0ae825f8e0d7f41201fd44a0df1cf454c1cb0bc50fe9d59c26552260264c2ff8",
-                    "url": "https://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-0.9.72.tar.gz"
+                    "sha256": "f0b1547b5a42a6c0f724e8e1c1cb5ce9c4c35fb495e7d780b9930d35011ceb4c",
+                    "url": "https://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-0.9.76.tar.gz"
                 }
             ]
         },
@@ -139,8 +143,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/libkiwix.git",
-                    "tag": "12.0.0",
-                    "commit": "e65c9c41d857c9284753f90dc5be6e28e79207ff"
+                    "tag": "12.1.1",
+                    "commit": "45b3cfca164d0c0b39054e6d55484b59841ce52f"
                 }
             ]
         },
