@@ -1,19 +1,20 @@
 {
     "app-id": "org.kiwix.desktop",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-21.08",
+    "runtime-version": "5.15-23.08",
     "base": "io.qt.qtwebengine.BaseApp",
-    "base-version": "5.15-21.08",
+    "base-version": "5.15-23.08",
     "sdk": "org.kde.Sdk",
     "command": "kiwix-desktop",
     "rename-icon": "kiwix-desktop",
     "finish-args": [
-        "--socket=wayland",
-        "--socket=x11",
-        "--share=network",
-        "--share=ipc",
         "--device=dri",
-        "--socket=pulseaudio"
+        "--env=QTWEBENGINEPROCESS_PATH=/app/bin/QtWebEngineProcess",
+        "--socket=wayland",
+        "--socket=fallback-x11",
+        "--socket=pulseaudio",
+        "--share=network",
+        "--share=ipc"
     ],
     "cleanup": [
         "/include",
@@ -33,6 +34,9 @@
         "/share/doc",
         "/share/man"
     ],
+    "cleanup-commands": [
+        "/app/cleanup-BaseApp.sh"
+    ],
     "modules": [
         {
             "name": "pugixml",
@@ -40,8 +44,9 @@
             "sources": [
                 {
                     "type": "archive",
+                    "dest-filename": "pugixml-1.2.tar.gz",
                     "sha256": "0f422dad86da0a2e56a37fb2a88376aae6e931f22cc8b956978460c9db06136b",
-                    "url": "http://mirror.download.kiwix.org/dev/kiwix-build/pugixml-1.2.tar.gz",
+                    "url": "https://dev.kiwix.org/kiwix-build/pugixml-1.2.tar.gz",
                     "dest": "src"
                 },
                 {
@@ -61,8 +66,9 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "f7de13462f7a82c29ab865820149e778cbfe01087b3a55b5332707abf9db4a6e",
-                    "url": "https://github.com/facebook/zstd/archive/refs/tags/v1.5.2.tar.gz"
+                    "dest-filename": "zstd-1.5.5.tar.gz",
+                    "sha256": "98e9c3d949d1b924e28e01eccb7deed865eefebf25c2f21c702e5cd5b63b85e1",
+                    "url": "https://github.com/facebook/zstd/archive/refs/tags/v1.5.5.tar.gz"
                 }
             ]
         },
@@ -77,8 +83,9 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "196ddbb4ad10450100f0991a599e4ed944cbad92e4a6fe813be6dce160244b77",
-                    "url": "http://mirror.download.kiwix.org/dev/kiwix-build/xapian-core-1.4.18.tar.xz"
+                    "dest-filename": "xapian-core-1.4.23.tar.xz",
+                    "sha256": "30d3518172084f310dab86d262b512718a7f9a13635aaa1a188e61dc26b2288c",
+                    "url": "https://dev.kiwix.org/kiwix-build/xapian-core-1.4.23.tar.xz"
                 }
             ]
         },
@@ -93,25 +100,44 @@
                 {
                     "type": "git",
                     "url": "https://github.com/openzim/libzim.git",
-                    "tag": "8.1.0",
-                    "commit": "9bc584edd178492f2bc8dc2a43889319980e6564"
+                    "tag": "9.2.3",
+                    "commit": "398a3c25059ee0ec7e2987d6af336d67dd681ba1"
                 }
             ]
         },
         {
             "name": "libmicrohttpd",
+            "buildsystem": "meson",
             "config-opts": [
-                "--disable-https",
-                "--without-libgcrypt",
-                "--without-libcurl",
-                "--disable-doc",
-                "--disable-examples"
+                "-Dgnutls=disabled",
+                "-Dgcrypt=disabled",
+                "-Dcurl=disabled",
+                "-Dexpat=disabled"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "0ae825f8e0d7f41201fd44a0df1cf454c1cb0bc50fe9d59c26552260264c2ff8",
-                    "url": "https://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-0.9.72.tar.gz"
+                    "dest-filename": "libmicrohttpd-0.9.76.tar.gz",
+                    "sha256": "f0b1547b5a42a6c0f724e8e1c1cb5ce9c4c35fb495e7d780b9930d35011ceb4c",
+                    "url": "https://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-0.9.76.tar.gz"
+                },
+                {
+                    "type": "archive",
+                    "dest-filename": "libmicrohttpd_0.9.16-3_patch.zip",
+                    "sha256": "0954c094a0d4cfe0dd799d8df8a04face6669f7b4d51a7386a9c3e2d37b9c3b3",
+                    "url": "https://wrapdb.mesonbuild.com/v2/libmicrohttpd_0.9.76-3/get_patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "patches/libmicrohttpd_meson_pkgconfig.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "patches/libmicrohttpd_meson_timeval_tvsec_size.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "patches/libmicrohttpd_meson_winet6.patch"
                 }
             ]
         },
@@ -124,6 +150,7 @@
             "sources": [
                 {
                     "type": "archive",
+                    "dest-filename": "Mustache-4.1.tar.gz",
                     "sha256": "acd66359feb4318b421f9574cfc5a511133a77d916d0b13c7caa3783c0bfe167",
                     "url": "https://github.com/kainjow/Mustache/archive/v4.1.tar.gz"
                 }
@@ -139,8 +166,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/libkiwix.git",
-                    "tag": "12.0.0",
-                    "commit": "e65c9c41d857c9284753f90dc5be6e28e79207ff"
+                    "tag": "14.0.0",
+                    "commit": "20abebd6237fe5879bf79950a0e620edd620f33a"
                 }
             ]
         },
@@ -154,8 +181,9 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "58d1e7608c12404f0229a3d9a4953d0d00c18040504498b483305bcb3de907a5",
-                    "url": "https://github.com/aria2/aria2/releases/download/release-1.36.0/aria2-1.36.0.tar.xz"
+                    "dest-filename": "aria2-1.37.0.tar.xz",
+                    "sha256": "60a420ad7085eb616cb6e2bdf0a7206d68ff3d37fb5a956dc44242eb2f79b66b",
+                    "url": "https://dev.kiwix.org/kiwix-desktop/aria2-1.37.0.tar.xz"
                 }
             ]
         },
@@ -163,21 +191,17 @@
             "name": "kiwix-desktop",
             "buildsystem": "qmake",
             "build-options": {
-                "env": [
-                    "QMAKEPATH=/app/lib"
-                ]
+                "env": {
+                    "QMAKEPATH": "/app/lib"
+                }
             },
-            "config-opts": [
-                "QMAKE_INCDIR+=/app/include/QtWebEngine",
-                "QMAKE_INCDIR+=/app/include/QtWebEngineCore",
-                "QMAKE_INCDIR+=/app/include/QtWebEngineWidgets"
-            ],
+            "config-opts": [],
             "sources": [
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-desktop.git",
-                    "tag": "2.3.1",
-                    "commit": "840b731a59cc9d230a2d9b4d7729c569c03c8f9e"
+                    "tag": "2.4.0",
+                    "commit": "a64806061b77687552e0102d259e6ae0ebf36204"
                 }
             ]
         }
