@@ -200,8 +200,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/kiwix/kiwix-desktop.git",
-                    "tag": "2.4.0",
-                    "commit": "a64806061b77687552e0102d259e6ae0ebf36204"
+                    "tag": "2.4.1",
+                    "commit": "eead4a224d62504485e2d3f02a7468787dd5ae89"
                 }
             ]
         }
