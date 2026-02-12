@@ -110,15 +110,11 @@
                 },
                 {
                     "type": "patch",
-                    "path": "patches/libmicrohttpd_meson_pkgconfig.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/libmicrohttpd_meson_timeval_tvsec_size.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/libmicrohttpd_meson_winet6.patch"
+                    "paths": [
+                        "patches/libmicrohttpd_meson_pkgconfig.patch",
+                        "patches/libmicrohttpd_meson_timeval_tvsec_size.patch",
+                        "patches/libmicrohttpd_meson_winet6.patch"
+                    ]
                 }
             ]
         },
