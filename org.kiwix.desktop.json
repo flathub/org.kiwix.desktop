@@ -18,10 +18,6 @@
         "--filesystem=host:ro"
     ],
     "cleanup": [
-        "/include",
-        "/lib/pkgconfig",
-        "/lib/cmake",
-        "/lib/*.la",
         "/bin/curl",
         "/bin/copydatabase",
         "/bin/kiwix-compile-resources",
@@ -31,6 +27,11 @@
         "/bin/quest",
         "/bin/simple*",
         "/bin/xapian-*",
+        "/include",
+        "/lib/pkgconfig",
+        "/lib/cmake",
+        "/lib/*.la",
+        "/lib/*.a",
         "/share/aclocal",
         "/share/doc",
         "/share/man"
