@@ -48,11 +48,13 @@
                     "sha256": "2e094287f58de02047b2ef23122904de0e02e3b4e9d6b44952d087e746b25974",
                     "url": "https://dev.kiwix.org/kiwix-build/pugixml-1.15.tar.gz",
                     "dest": "src"
-                },
+                }
+                /* This was included when the pugixml 1.2 archive was available. 
+                 * It isn't anymore. If it becomes available again, then uncomment this.
                 {
                     "type": "patch",
                     "path": "patches/pugixml_meson.patch"
-                }
+                }*/
             ]
         },
         {
