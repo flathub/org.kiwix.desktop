@@ -1,9 +1,9 @@
 {
     "app-id": "org.kiwix.desktop",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-23.08",
+    "runtime-version": "5.15-25.08",
     "base": "io.qt.qtwebengine.BaseApp",
-    "base-version": "5.15-23.08",
+    "base-version": "5.15-25.08",
     "sdk": "org.kde.Sdk",
     "command": "kiwix-desktop",
     "rename-icon": "kiwix-desktop",
