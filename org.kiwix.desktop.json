@@ -1,9 +1,9 @@
 {
     "app-id": "org.kiwix.desktop",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-23.08",
+    "runtime-version": "5.15-25.08",
     "base": "io.qt.qtwebengine.BaseApp",
-    "base-version": "5.15-23.08",
+    "base-version": "5.15-25.08",
     "sdk": "org.kde.Sdk",
     "command": "kiwix-desktop",
     "rename-icon": "kiwix-desktop",
@@ -44,15 +44,17 @@
             "sources": [
                 {
                     "type": "archive",
-                    "dest-filename": "pugixml-1.2.tar.gz",
-                    "sha256": "0f422dad86da0a2e56a37fb2a88376aae6e931f22cc8b956978460c9db06136b",
-                    "url": "https://dev.kiwix.org/kiwix-build/pugixml-1.2.tar.gz",
+                    "dest-filename": "pugixml-1.15.tar.gz",
+                    "sha256": "2e094287f58de02047b2ef23122904de0e02e3b4e9d6b44952d087e746b25974",
+                    "url": "https://dev.kiwix.org/kiwix-build/pugixml-1.15.tar.gz",
                     "dest": "src"
-                },
+                }
+                /* This was included when the pugixml 1.2 archive was available. 
+                 * It isn't anymore. If it becomes available again, then uncomment this.
                 {
                     "type": "patch",
                     "path": "patches/pugixml_meson.patch"
-                }
+                }*/
             ]
         },
         {
